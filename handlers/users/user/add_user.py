@@ -90,9 +90,9 @@ async def add_job(callback: types.CallbackQuery, state: FSMContext):
         elif callback.data:
             data['job'] = callback.data
 
-            await bot.send_message(chat_id=ADMINS[0],
-                                   text=f"Ushbu foydalanuvchi {data['name']} ro'yhatdan o'tdi !\n"
-                                   )
+            # await bot.send_message(chat_id=ADMINS[0],
+            #                        text=f"Ushbu foydalanuvchi {data['name']} ro'yhatdan o'tdi !\n"
+            #                        )
 
             await bot.send_photo(chat_id=callback.message.chat.id,
                                  photo="https://w7.pngwing.com/pngs/627/693/png-transparent-computer-icons-user-user-icon.png",
